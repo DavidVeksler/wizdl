@@ -8,12 +8,12 @@ using System.Windows.Forms;
 namespace WebServices.UI
 {
     /// <summary>
-    ///   Summary description for Form1.
+    ///     Summary description for Form1.
     /// </summary>
     public class Form1 : Form
     {
         /// <summary>
-        ///   Required designer variable.
+        ///     Required designer variable.
         /// </summary>
         private readonly Container components = null;
 
@@ -74,7 +74,7 @@ namespace WebServices.UI
         }
 
         /// <summary>
-        ///   Clean up any resources being used.
+        ///     Clean up any resources being used.
         /// </summary>
         protected override void Dispose(bool disposing)
         {
@@ -89,13 +89,12 @@ namespace WebServices.UI
         }
 
         /// <summary>
-        ///   The main entry point for the application.
+        ///     The main entry point for the application.
         /// </summary>
         [STAThread]
         private static void Main()
         {
             Application.Run(new Form1());
-            
         }
 
         private void cbxServices_SelectedIndexChanged(object sender, EventArgs e)
@@ -289,12 +288,13 @@ namespace WebServices.UI
         #region Windows Form Designer generated code
 
         /// <summary>
-        ///   Required method for Designer support - do not modify
-        ///   the contents of this method with the code editor.
+        ///     Required method for Designer support - do not modify
+        ///     the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources =
+                new System.ComponentModel.ComponentResourceManager(typeof (Form1));
             this.openFileDialog = new System.Windows.Forms.OpenFileDialog();
             this.saveFileDialog = new System.Windows.Forms.SaveFileDialog();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
@@ -369,7 +369,8 @@ namespace WebServices.UI
             this.linkLabel1.TabIndex = 29;
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "WSDL URL";
-            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
+            this.linkLabel1.LinkClicked +=
+                new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
             // btnSaveFile
             // 
@@ -418,9 +419,11 @@ namespace WebServices.UI
             // 
             // gridPanel
             // 
-            this.gridPanel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.gridPanel.Anchor =
+                ((System.Windows.Forms.AnchorStyles)
+                 ((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                    | System.Windows.Forms.AnchorStyles.Left)
+                   | System.Windows.Forms.AnchorStyles.Right)));
             this.gridPanel.Location = new System.Drawing.Point(6, 109);
             this.gridPanel.Name = "gridPanel";
             this.gridPanel.Size = new System.Drawing.Size(612, 208);
@@ -472,9 +475,11 @@ namespace WebServices.UI
             // 
             // groupResult
             // 
-            this.groupResult.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupResult.Anchor =
+                ((System.Windows.Forms.AnchorStyles)
+                 ((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                    | System.Windows.Forms.AnchorStyles.Left)
+                   | System.Windows.Forms.AnchorStyles.Right)));
             this.groupResult.Location = new System.Drawing.Point(9, 3);
             this.groupResult.Name = "groupResult";
             this.groupResult.Size = new System.Drawing.Size(607, 168);
@@ -495,8 +500,10 @@ namespace WebServices.UI
             // 
             // txtSoap
             // 
-            this.txtSoap.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtSoap.Anchor =
+                ((System.Windows.Forms.AnchorStyles)
+                 (((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
+                   | System.Windows.Forms.AnchorStyles.Right)));
             this.txtSoap.Location = new System.Drawing.Point(8, 16);
             this.txtSoap.Multiline = true;
             this.txtSoap.Name = "txtSoap";
@@ -506,8 +513,10 @@ namespace WebServices.UI
             // 
             // cbxRecentUrls
             // 
-            this.cbxRecentUrls.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.cbxRecentUrls.Anchor =
+                ((System.Windows.Forms.AnchorStyles)
+                 (((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
+                   | System.Windows.Forms.AnchorStyles.Right)));
             this.cbxRecentUrls.DropDownWidth = 336;
             this.cbxRecentUrls.FormattingEnabled = true;
             this.cbxRecentUrls.Location = new System.Drawing.Point(536, 7);
@@ -522,7 +531,7 @@ namespace WebServices.UI
             this.AutoScaleBaseSize = new System.Drawing.Size(5, 13);
             this.ClientSize = new System.Drawing.Size(628, 658);
             this.Controls.Add(this.splitContainer1);
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Icon = ((System.Drawing.Icon) (resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Text = "wizdl - Web Service GUI";
             this.splitContainer1.Panel1.ResumeLayout(false);
@@ -532,7 +541,6 @@ namespace WebServices.UI
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
-
         }
 
         #endregion
@@ -568,9 +576,10 @@ namespace WebServices.UI
                 cbxRecentUrls.Items.Add(txtWsdlUrl.Text);
             }
 
-            string urls = cbxRecentUrls.Items.Cast<object>().Aggregate("", (current, url) => current + (url + Environment.NewLine));
+            string urls = cbxRecentUrls.Items.Cast<object>()
+                                       .Aggregate("", (current, url) => current + (url + Environment.NewLine));
 
-            File.WriteAllText(path,urls);
+            File.WriteAllText(path, urls);
         }
     }
 }

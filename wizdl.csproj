@@ -7,7 +7,7 @@
     <ProjectGuid>{2CB9C87A-B50E-45C2-8B9A-CD4F16C3BCE7}</ProjectGuid>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ApplicationIcon>App.ico</ApplicationIcon>
+    <ApplicationIcon>SOAP_Icon.ico</ApplicationIcon>
     <AssemblyKeyContainerName>
     </AssemblyKeyContainerName>
     <AssemblyName>wizdl</AssemblyName>
@@ -20,8 +20,7 @@
     <OutputType>WinExe</OutputType>
     <RootNamespace>WebServices.UI</RootNamespace>
     <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
-    <StartupObject>
-    </StartupObject>
+    <StartupObject>WebServices.UI.Form1</StartupObject>
     <FileUpgradeFlags>
     </FileUpgradeFlags>
     <UpgradeBackupLocation>
@@ -129,6 +128,7 @@
     <Compile Include="WebServiceList.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Content Include="SOAP_Icon.ico" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
