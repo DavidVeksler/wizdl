@@ -547,7 +547,7 @@ namespace WebServices.UI
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            Process.Start("http://e1portal.ef.com/Odin/IT%20Technical%20Wiki/Environments.aspx");
+            Process.Start("https://confluence.englishtown.com/display/ITIS/Environments");
         }
 
         private void cbxRecentUrls_SelectedIndexChanged(object sender, EventArgs e)
